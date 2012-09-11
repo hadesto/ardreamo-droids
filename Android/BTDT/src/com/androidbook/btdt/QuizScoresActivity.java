@@ -1,7 +1,7 @@
-package com.androidbook.btdt.hour6;
+package com.androidbook.btdt;
 
 import android.app.Activity;
 
-public class QuizHelpActivity extends Activity {
+public class QuizScoresActivity extends Activity {
     public static final String GAME_PREFERENCES = "GamePrefs";
 }

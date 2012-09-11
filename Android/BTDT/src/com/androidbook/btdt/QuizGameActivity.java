@@ -1,4 +1,4 @@
-package com.androidbook.btdt.hour6;
+package com.androidbook.btdt;
 
 import android.app.Activity;
 
