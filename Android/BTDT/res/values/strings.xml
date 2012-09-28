@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Been There, Done That!</string>
+    <string name="help">Help Screen</string>
+    <string name="menu">Main Menu</string>
+    <string name="settings">Settings Screen</string>
+    <string name="game">Game Screen</string>
+    <string name="scores">Scores Screen</string>
+    <string name="app_logo_top">BEEN THERE</string>
+    <string name="app_logo_bottom">DONE THAT!</string>
+    <string name="app_version_info">Version 2.0.0\nCopyright 2011 Mamlambo\nAll Rights Reserved</string>
+</resources>
