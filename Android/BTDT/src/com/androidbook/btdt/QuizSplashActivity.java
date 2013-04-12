@@ -39,6 +39,7 @@ public class QuizSplashActivity extends Activity {
         
         
         // animation for fading into the menu activity 
+        TextView logo2	= (TextView) findViewById(R.id.TextViewBottomTitle);
         Animation fade2 = AnimationUtils.loadAnimation(this, R.anim.fade_in2);
         fade2.setAnimationListener(new AnimationListener() {
 			public void onAnimationEnd(Animation animation) {
@@ -60,6 +61,8 @@ public class QuizSplashActivity extends Activity {
 				
 			}
 		});
+        
+        logo2.startAnimation(fade2);
     }
     
     protected void onPause() {
