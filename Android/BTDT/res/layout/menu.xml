@@ -1,24 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/RelativeLayout2" 
-    android:background="@android:color/black" 
-    android:orientation="vertical" 
-    android:layout_height="match_parent" 
-    android:layout_width="match_parent">
-    <RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/looney_logo"
+        android:gravity="fill_horizontal|center" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+            <ImageView
+                android:id="@+id/ImageView_MenuHeader"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"                
+				android:layout_height="wrap_content"
+                android:src="@drawable/icon"
+                android:contentDescription="@string/menu_icon_picture"
+                >
+            </ImageView>
+            <TextView
+                android:text="@string/menu"
+                android:textSize="@dimen/menu_item_size"
+                android:textColor="@color/menu_color"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"                
+				android:layout_height="wrap_content"
+                >
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/menu_icon_picture"
+                android:src="@drawable/icon" 
+                >
+            </ImageView>
+
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/ListView_Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/RelativeLayout01"
+            >
+        </ListView>
         <ImageView
-    	/>
-    	<TextView  
-   			android:layout_width="fill_parent" 
-    		android:layout_height="wrap_content" 
-    		android:text="@string/menu"
-    	/>
-        <ImageView
-    	/>
+            android:src="@drawable/looney_tunes_banner"    
+            android:contentDescription="@string/menu_half_image"  
+            android:layout_width="fill_parent"                
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerInside"
+           >
+       </ImageView>
+
     </RelativeLayout>
-	<ListView>
-	</ListView>
-    <ImageView
-    />
-</RelativeLayout>
